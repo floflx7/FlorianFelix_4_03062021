@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background: #FFF;
-    overflow-x: hidden;
+    
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -24,8 +24,11 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+    background: #FFFFFF url("../img/pageload-spinner.gif") no-repeat center center;
 }
+
+
+
 
 .bloc {
     width: 100%;
@@ -42,6 +45,9 @@ a:hover {
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bloc-lg {
@@ -91,8 +97,9 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("../img/texture-paper.png");
     background-size: 280px 280px;
+    
 }
 
 .b-parallax {
@@ -134,6 +141,7 @@ a:hover {
 .d-bloc h6 a,
 .d-bloc p a {
     color: rgba(255, 255, 255, .6);
+    
 }
 
 .d-bloc .a-btn:hover,
@@ -272,6 +280,12 @@ a:hover {
     margin-top: 80px;
 }
 
+.row .tc-white{
+    position: relative;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+}
+
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -330,6 +344,7 @@ a:hover {
 
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
+    
 }
 
 .nav > li a:hover,
@@ -403,6 +418,8 @@ a:hover {
     }
 }
 
+
+
 .nav > li > .dropdown a {
     background: none!important;
     display: block;
@@ -433,6 +450,11 @@ nav .caret {
     border-bottom-color: transparent;
     margin: 6px -5px 0 0!important;
     float: right;
+}
+
+.keyword {
+    color:#000000;
+    font-size:10px;
 }
 
 .mg-md {
@@ -639,6 +661,11 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
+.h2_center {
+    text-align: center;
+    padding: 0px 100px 0px 100px;
+}
+
 h1,
 h2,
 h3,
@@ -658,12 +685,21 @@ a {
     max-width: 1000px;
 }
 
+ .col-sm-6 p{
+    margin-top: 33%;
+    
+} 
+
 .hero-bloc-text {
     font-size: 38px;
 }
 
 .hero-bloc-text-sub {
     font-size: 36px;
+}
+
+#bloc-6 {
+    text-align: center;
 }
 
 .statement-bloc-text {
@@ -677,7 +713,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 17px;
 }
 
 .tight-width-whitespace {
@@ -686,7 +722,7 @@ p {
 }
 
 .h1 {
-    font-size: 20px;
+    font-size: 22px;
     font-family: "Open Sans";
 }
 
@@ -705,12 +741,12 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -771,20 +807,20 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #5e3b2b;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #ffffff!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #5e3b2b;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #5e3b2b!important;
     color: #FFFFFF!important;
 }
 
@@ -797,11 +833,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #5e3b2b!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #5e3b2b!important;
 }
 
 .icon-dark-slate-blue {
@@ -810,19 +846,27 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("../img/dots-bg.png");
+    z-index: 1;
+    position: relative;
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("../img/lines-h2-bg.png");
+    z-index: 1;
+    position: relative;
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("../img/la-chouette-agence-banniere.jpg");
+    z-index: 1;
+    position: relative;
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("../img/image-de-presentation.bmp");
+    z-index: 1;
+    position: relative;
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +892,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max--width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -873,8 +917,7 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+         
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -884,8 +927,7 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        
     }
 }
 
