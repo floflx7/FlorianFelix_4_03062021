@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fff;
-
+  font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -592,7 +592,7 @@ a[data-lightbox]:hover img {
   margin: 0 auto;
 }
 
-.lightbox-caption {
+.lightbox-caption p{
   padding: 20px;
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
@@ -609,7 +609,7 @@ a[data-lightbox]:hover img {
   top: 20px;
   right: 20px;
   z-index: 20;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgb(0, 0, 0);
   border: none;
   line-height: 30px;
   padding: 0 9px 5px;
@@ -623,11 +623,11 @@ a[data-lightbox]:hover img {
   color: #fff;
 }
 
-.next-lightbox,
+.next-lightbox ,
 .prev-lightbox {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
   transition: all 0.2s ease-in-out;
   position: absolute;
   top: 45%;
@@ -636,23 +636,29 @@ a[data-lightbox]:hover img {
 }
 
 .next-lightbox {
-  padding: 6px 8px 1px 13px;
+  padding: 6px 11px 6px 11px;
   right: 25px;
 }
 
 .prev-lightbox {
-  padding: 6px 13px 1px 10px;
+  padding: 6px 11px 6px 11px;
   left: 25px;
 }
 
+.modal-body span {
+
+}
+
 .snapshot-lb .modal-body {
-  padding-bottom: 45px;
+  padding-bottom: 20px;
 }
 
 .snapshot-lb .lightbox-caption {
   padding: 0;
   color: rgba(0, 0, 0, 0.5);
   background: none;
+  text-align: center;
+  padding-top: 5%;
 }
 
 .h2_center {
@@ -674,6 +680,8 @@ a {
   font-weight: 400;
   color: #575757 !important;
 }
+
+
 
 .container {
   max-width: 1000px;
@@ -731,8 +739,11 @@ p {
 }
 
 .social {
-  max-width: 400px;
-  margin: auto auto auto auto;
+  letter-spacing: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 h2 {
@@ -772,6 +783,8 @@ h4 {
 
 .portfolio-thumb {
   margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio-row {
@@ -1050,6 +1063,7 @@ h4 {
   }
   .close-lightbox {
     display: inline-block;
+    padding: 5px 10px 5px 10px;
   }
   .blocsapp-device-iphone5 {
     background-size: 216px 425px;
